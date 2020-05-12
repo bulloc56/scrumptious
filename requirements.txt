@@ -1,0 +1,9 @@
+Flask
+Flask-Login
+Flask-SQLAlchemy
+Flask-SocketIO
+Flask-WTF
+gunicorn
+Pillow
+SQLAlchemy
+WTForms
