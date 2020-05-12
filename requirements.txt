@@ -7,3 +7,4 @@ gunicorn
 Pillow
 SQLAlchemy
 WTForms
+Flask-Bcrypt
