@@ -9,5 +9,5 @@ SQLAlchemy
 WTForms
 Flask-Bcrypt
 email_validator
-psycopg2
+psycopg2-binary
 Flask-Heroku
