@@ -10,3 +10,4 @@ WTForms
 Flask-Bcrypt
 email_validator
 psycopg2
+Flask-Heroku
