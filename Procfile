@@ -1,1 +1,1 @@
-web: gunicorn --chdir PagesInFlask run:app
+web: gunicorn -k eventlet --chdir PagesInFlask run:app
