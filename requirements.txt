@@ -9,3 +9,4 @@ SQLAlchemy
 WTForms
 Flask-Bcrypt
 email_validator
+psycopg2
