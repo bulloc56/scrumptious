@@ -9,7 +9,7 @@ import psycopg2
 
 
 os.environ['DATABASE_URL'] = <URL>
-DATABASE_URL = os.environ['DATABASE_URL']
+DATABASE_URL = os.environ['postgres://melguiqtptingg:59490593b602713ec33c19e0a871d3a8576c84364788e6538e04c5aecb51ee70@ec2-18-235-20-228.compute-1.amazonaws.com:5432/d26m0edev55i4s']
 conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '508d2c80b4056ad1e9d9969224d3fcbd'
