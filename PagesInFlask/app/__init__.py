@@ -4,11 +4,15 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
 from flask_login import LoginManager
 from flask_socketio import SocketIO, send
+import os
+import psycopg2
 
+DATABASE_URL = os.environ['DATABASE_URL']
 
+conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '508d2c80b4056ad1e9d9969224d3fcbd'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db?charset=utf8mb4'
+app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
 socketio = SocketIO(app)
